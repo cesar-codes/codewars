@@ -4,7 +4,6 @@ You must implement a function that returns the difference between the largest an
 
 lst contains integers, that means it may contain some negative numbers
 if lst is empty or contains a single element, return 0
-
 */
 function maxDiff(list) {
     if (list.length < 2) return 0
