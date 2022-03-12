@@ -16,7 +16,6 @@ Examples
 
 '0' and '?' returns -1
 
-
 */
 const sameCase = (a,b) => {
     //nonletters return the same thing if toUpper/LowerCase()
