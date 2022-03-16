@@ -11,11 +11,13 @@ Examples:
 []  =>  []
  */
 
+const twoHighest = arr => [...new Set(arr)].sort((a,b) => b - a, 0).slice(0, 2)
 
-function twoHighest(arr) {
+
+/* function twoHighest(arr) {
     let result = [...new Set(arr)]
     if (result.length === 0) return []
     else if (result.length === 1) return result
     result = result.sort((a,b) => b - a, 0)
     return [result[0], result[1]]
-  }
+  } */
