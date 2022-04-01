@@ -9,4 +9,4 @@ For example:
 'function maps(x){
     const cheat = x.map( i => i*2 )
     return cheat;
-  }'
+  }
