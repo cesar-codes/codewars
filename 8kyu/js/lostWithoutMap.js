@@ -6,7 +6,7 @@ For example:
 
 [1, 2, 3] --> [2, 4, 6]
 */
-'function maps(x){
+function maps(x){
     const cheat = x.map( i => i*2 )
     return cheat;
   }
