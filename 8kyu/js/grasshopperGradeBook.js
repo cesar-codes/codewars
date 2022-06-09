@@ -11,7 +11,11 @@ Numerical Score	Letter Grade
 Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
 */
 
-
+const getGrade = (s1, s2, s3) => {
+  let avg = (s1 + s2 + s3) / 3
+  return avg >= 90 ? "A" : avg >= 80 ? "B" : avg >= 70 ? "C" : avg >= 60 ? "D" : "F"
+}
+/* 
 function getGrade (s1, s2, s3) {
 
     let grade = Math.floor( (s1 + s2 + s3) / 3 )
@@ -22,5 +26,5 @@ function getGrade (s1, s2, s3) {
     else if (grade > 59 ) return 'D'
     else return 'F'
     
-  }
+  } */
   
