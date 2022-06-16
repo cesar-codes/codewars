@@ -6,8 +6,10 @@ Examples
 "This is an example!" ==> "sihT si na !elpmaxe"
 "double  spaces"      ==> "elbuod  secaps" */
 
-function reverseWords(str) {
+const reverseWords = str => str.split(' ').map( word => word.split('').reverse().join('') ).join(' ')
+
+/* function reverseWords(str) {
     str = str.split(' ').map(word => word = word.split('').reverse().join('') ).join(' ')
     console.log(str)
     return str
-  }
+  } */
