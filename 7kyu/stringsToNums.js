@@ -13,3 +13,4 @@ Note that you can receive floats as well.
  */
 const toNumberArray = stringarray => stringarray.map(parseFloat)
 //const toNumberArray = stringarray => stringarray.map(a => Number(a))
+/*  */
