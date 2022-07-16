@@ -9,11 +9,13 @@ spinWords( "This is a test") => returns "This is a test"
 spinWords( "This is another test" )=> returns "This is rehtona test"
 */
 
-function spinWords(string){
+const spinWords = string => string.split(' ').map(w => w.length > 4 ? w.split('').reverse('').join('') : w  ).join(' ')
+
+/* function spinWords(string){
     //TODO Have fun :)
     return string
       .split(' ')
       .map(w => w.length > 4 ? w.split('').reverse().join('') : w )
       .join(' ')
   }
-  
+   */
