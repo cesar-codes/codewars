@@ -8,7 +8,19 @@ When the item isn't present or nothing follows it, the function should return ni
 nextItem([1, 2, 3, 4, 5, 6, 7], 3) # 4
 nextItem("testing", "t") # "e"*/
 
-function nextItem(xs, item) {
+const nextItem = (xs, item) => {
+  
+    let found = false
+    
+    for (let i of xs) {
+      if (found) return i;
+      else if (i === item) found = true;
+    }
+    
+    return undefined
+  }
+
+/* function nextItem(xs, item) {
     let found = false;
     let result;
   
@@ -22,4 +34,4 @@ function nextItem(xs, item) {
     }
   
     return result;
-  };
+  }; */
