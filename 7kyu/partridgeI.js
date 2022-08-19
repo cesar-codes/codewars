@@ -28,4 +28,4 @@ const part = x => {
     let num = x.filter(v => vals.includes(v)).length;
     if (vals.some(v => x.includes(v))) return `Mine\'s a Pint${"!".repeat(num)}`;
     return "Lynn, I've pierced my foot on a spike!!";
-  
+}
