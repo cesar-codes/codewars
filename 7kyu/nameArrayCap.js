@@ -6,3 +6,4 @@ function capMe(names) {
     return names.map(elem => elem.charAt(0).toUpperCase() + elem.slice(1).toLowerCase() )
   }
   
+  
