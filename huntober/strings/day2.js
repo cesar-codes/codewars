@@ -11,7 +11,7 @@ myStr = myStr.split('Eek!')
 myStr = myStr.join('')
 myStr = myStr.split('').reverse().join('')
 
-//console.log(' f i n a l  s t r i n g ', myStr)
+console.log(' f i n a l  s t r i n g ', myStr)
 
 myStr = myStr.split('v')
 for (let i = 0; i < myStr.length; i++){
