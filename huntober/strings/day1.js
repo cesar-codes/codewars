@@ -19,8 +19,10 @@ const fixer = str => {
     console.log(newStr)
    return newStr;
 }
+console.log(funInput)
 fixer(input)
-fixer(funInput)
+fixer(funInput) //e!!1gv)tSllt8cvbdeDHEdVw!00t1#Aa.2MDuLWYpP^VVjDch1SOiv#yl4gmQfs
+
 
 
 
