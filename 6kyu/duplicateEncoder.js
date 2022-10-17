@@ -12,6 +12,11 @@ Assertion messages may be unclear about what they display in some languages. If 
 */
 function duplicateEncode(word){
     word = word.toLowerCase()
+      return word.toLowerCase().split('').map((e, i) => word.indexOf(word[i]) === word.lastIndexOf(word[i]) ? a = '(' : a = ')' ).join('')
+  }
+
+/* function duplicateEncode(word){
+    word = word.toLowerCase()
     word = word.split('')
     console.log(word)
     let result = ''
@@ -20,5 +25,5 @@ function duplicateEncode(word){
       else result += ')'
     }
     return result
-  }
+  } */
   
