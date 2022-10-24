@@ -6,7 +6,9 @@ Return the average of the given array rounded down to its nearest integer.
 
 The array will never be empty
 */
-function getAverage(marks){
+/* function getAverage(marks){
     //TODO : calculate the downward rounded average of the marks array
     return Math.floor( marks.reduce((x,y) => x+y) / marks.length)
-  }
+  } */
+
+  const getAverage = marks => Math.floor(marks.reduce((a,b) => a + b, 0) / marks.length )
