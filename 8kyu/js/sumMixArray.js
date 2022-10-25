@@ -5,8 +5,10 @@ Given an array of integers as strings and numbers, return the sum of the array v
 Return your answer as a number.
 
 */
-function sumMix(x){
+/* function sumMix(x){
     x = x.map(x => Number(x))
     const y = x.reduce((adder, old ) => adder += old)
     return y
-  }
+  } */
+
+  const sumMix = x => x.reduce((num, acc) => +num + +acc, 0)
