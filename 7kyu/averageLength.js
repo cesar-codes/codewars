@@ -11,9 +11,14 @@ If the average length is not an integer, use Math.round().
 The input array's length > 1
 */
 
-function averageLength(arr) { 
+function averageLength(t) { 
+    let average = Math.round(t.map(a => a.length).reduce((a,b) => a + b) / t.length)
+    return t.map(s => s[0].repeat(average))
+  }
+
+/* function averageLength(arr) { 
     //figure out the average length of each elem and round it
     let aver = Math.round(arr.map(e => e.length).reduce((a,b) => a + b) / arr.length)
     // return an array with the first string of each elem repeated xaver times
     return arr.map(e => e[0].repeat(aver))
-  }
+  } */
