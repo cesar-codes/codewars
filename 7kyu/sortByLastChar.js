@@ -7,3 +7,12 @@ If two words have the same last letter, they returned array should show them in 
 All inputs will be valid.
 */
 const last = x => x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length -1))
+
+/* function last(x){
+  console.log(x)
+  x = x. split(' ')
+  console.log(x[-1])
+  x = x.sort((a,b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+  return x
+}
+ */
