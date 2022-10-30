@@ -8,8 +8,13 @@ Strings a and b may be empty, but not null (In C# strings may also be null. Trea
 If a and b have the same length treat a as the longer producing b+reverse(a)+b
  */
 
+function shorter_reverse_longer(a,b){
+    return a.length >= b.length ? b + a.split('').reverse().join('') + b :
+    a + b.split('').reverse().join('') + a;
+  }
+  
 
-function shorter_reverse_longer(a, b) {
+/* function shorter_reverse_longer(a, b) {
     if (a.length > b.length) {
       return `${b}${a
         .split("")
@@ -26,5 +31,5 @@ function shorter_reverse_longer(a, b) {
       .split("")
       .reverse()
       .join("")}${b}`;
-  }
+  } */
   
