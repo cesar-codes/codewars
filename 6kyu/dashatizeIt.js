@@ -11,4 +11,6 @@ Ex:
 dashatize(274) -> '2-7-4'
 dashatize(6815) -> '68-1-5'
 */
-const dashatize = num => isNaN(num) ? 'NaN' : num.toString().match(/[13579]|[02468]+/g).join('-')
+//const dashatize = num => isNaN(num) ? 'NaN' : num.toString().match(/[13579]|[02468]+/g).join('-')
+
+const dashatize = num => String(num).replace(/([13579])/g, "-$1-").replace(/--+/g, "-").replace(/(^-|-$)/g, "")
