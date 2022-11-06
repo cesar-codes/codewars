@@ -17,11 +17,13 @@ is_square([1, 4, 9, 16]) --> True
 is_square([3, 4, 7, 9]) --> False
 
 is_square([]) --> None
-
  */
 
-var isSquare = function(arr){
+const isSquare = arr => arr.length ? arr.every(num => Math.sqrt(num) % 1 === 0 ): undefined
+
+
+/* var isSquare = function(arr){
     console.log(arr)
     if (arr.length < 1) return undefined
     return arr.every(a => Math.sqrt(a) % 1 === 0)
-  }
+  } */
