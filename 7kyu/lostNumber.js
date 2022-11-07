@@ -6,3 +6,6 @@ function findDeletedNumber(arr, mixArr) {
   return mixArr.reduce((a,b) => a - b, 0) - arr.reduce((a,b) => a - b, 0)
   
 }
+
+
+//const findDeletedNumber = (arr, mixArr) => arr.filter(num => mixArr.indexOf(num) === -1)[0] || 0
