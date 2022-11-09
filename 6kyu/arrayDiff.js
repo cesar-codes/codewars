@@ -13,3 +13,15 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 
 const arrayDiff = (a,b) => a.filter(s => !b.includes(s))
+
+
+/* 
+function arrayDiff(a, b) {
+  // base case, rule out any empty arrays
+  if (a.length === 0 || b.length === 0) return a
+  //create a new set to remove dupes
+  let newSet = new Set(b)
+  // filter out a using !has for anything in the new set
+  return a.filter(n => !newSet.has(n))
+}
+*/
