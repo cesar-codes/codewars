@@ -23,3 +23,12 @@ function gimme (triplet) {
     return triplet.indexOf(mine[1])
   }
   
+
+  /* 
+  function gimme (triplet) {
+  console.log(triplet)
+  let mid = [...triplet]
+  let middle = mid.sort((a,b) => a - b, 0)[1]
+  return triplet.indexOf(middle)
+
+  */
