@@ -8,6 +8,22 @@ Examples
 [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 
  */
+function sortArray(array) {
+    // create an array of the sorted odd numbers
+    let sortedOdds = array
+    // filter for odds
+    .filter(n => n % 2 !== 0)
+    // sort the odds
+    .sort((a,b) => a - b)
+    
+    //return a sorted array with map 
+    return array
+      // return evens or sorted odds in place with shift
+      .map(n => n % 2 === 0 ? n : sortedOdds.shift())
+    }
+  
+
+/* 
  function sortArray(array) {
     // Return a sorted array.
     let oddNums = array
@@ -22,4 +38,4 @@ Examples
     
     console.log(oddNums)
   }
-  
+   */
