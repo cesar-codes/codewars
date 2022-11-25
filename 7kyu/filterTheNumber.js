@@ -9,9 +9,15 @@ Details
 You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.
 */
 
+
+//one liner
+const filterString = value => +value.split('').filter(e => !isNaN(e)).join('')
+
+
+/* 
 var filterString = function(value) {
     //Complete this function :)
     console.log(value)
     return +value.split('').filter(a => !isNaN(a)).join('')
   }
-  
+   */
