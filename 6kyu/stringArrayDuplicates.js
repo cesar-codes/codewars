@@ -15,8 +15,12 @@ Good luck!
 If you like this Kata, please try:
 */
 
+//one liner
+const dup = s => s.map(w => w.split('').filter((l,i,a) => l !== a[i - 1]).join(''))
+
+
 //explained
-function dup(s) {
+/* function dup(s) {
     // return a new maped array
     return s.map(
     // split each word into letters
@@ -27,7 +31,7 @@ function dup(s) {
       // join the words back 
       .join('')
     )
-  };
+  }; */
 
 /* 
 function dup(s) {
