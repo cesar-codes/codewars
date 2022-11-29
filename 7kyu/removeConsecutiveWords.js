@@ -7,11 +7,17 @@ our task is to remove all consecutive duplicate words from a string, leaving onl
 --> "alpha beta gamma delta alpha beta gamma delta"
 */
 
-const removeConsecutiveDuplicates = s => {
+
+const removeConsecutiveDuplicates = s => s
+.split(' ')
+.filter ( (word, index, array) => word !== array[index + 1] )
+.join(' ')
+
+/* const removeConsecutiveDuplicates = s => {
     s = s.split(' ')
     let t = []
     for (let i = 0; i < s.length; i++){
       if (s[i] !== s[i + 1]) t.push(s[i])
     }
     return t.join(' ')
-  }
+  } */
