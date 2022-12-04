@@ -11,6 +11,15 @@ const solution = string => {
       .join('')
   }
 
+
+/* // using map and no regex 
+const solution = string => {
+    return string.split('')
+    // add a space before any upper cases and join
+      .map(letter => letter === letter.toUpperCase() ? ` ${letter}` : letter)
+      .join('')
+  }
+ */
 /* 
 // using regex
 function solution(string) {
