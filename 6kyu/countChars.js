@@ -20,17 +20,18 @@ function count (string) {
      return countObject;
   }
   
-  // function countChars(str){
-  //   //create obj
-  //   let countObj = {}
-  //   //loop -> check val exist ? val++ : val-1
-  //   for(const c of str){
-  //     if( countObj[c] ){
-  //       countObj[c]++
-  //     }else{
-  //       countObj[c] = 1
-  //     }
-  //   }
+  /* 
+  function countChars(str){
+    //create obj
+    let countObj = {}
+    //loop -> check val exist ? val++ : val-1
+    for(const c of str){
+      if( countObj[c] ){
+        countObj[c]++
+      }else{
+        countObj[c] = 1
+      }
+    }
   
-  //   return countObj
-  //   }
+    return countObj
+    } */
