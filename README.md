@@ -1,7 +1,12 @@
-# codewars
-Codewars Katas
+# Codewars Solutions
+
+Codewars Katas and my solutions. 
 
 ![alt rank](https://www.codewars.com/users/cesaravina/badges/large)
+
+I have solved over 500 Codewars Katas (challenges) and push my solutions to GitHub every day. 
+
+My solutions are organized challenge difficulty from 8 Kyu (easiest) to 1 Kyu (hardest).
 
 ###### Codewarriors: You are strongly encouraged not to look at my solutions to Kata challenges until you have completed it yourselves or at least took the time to think about your own approaches to the challenge.
 
